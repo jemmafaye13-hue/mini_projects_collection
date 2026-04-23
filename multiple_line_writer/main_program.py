@@ -1,0 +1,6 @@
+class MultiLineWriter:
+    def __init__(self, output_file):
+        self.output_file = output_file
+
+    def start_writing(self):
+        pass
