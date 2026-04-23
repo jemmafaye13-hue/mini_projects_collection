@@ -14,3 +14,12 @@ class NumberSeparator:
                     even.write(f"{num}\n")
                 else:
                     odd.write(f"{num}\n")
+
+    print("Task Completed! Check even.txt and odd.txt.")
+
+if __name__ == "__main__":
+    separator = NumberSeparator("numbers.txt")
+    try:
+        separator.process_numbers()
+    except FileNotFoundError:
+        print("Error: numbers.txt is missing!")
